@@ -24,6 +24,8 @@ class MyForm extends React.Component {
     render() {
         return (
             <form>
+                <img src="/logo192.png" alt="image" />
+
                 <h1>Hello {this.state.username} {this.state.age}</h1>
                 <p>Enter your name:</p>
                 <input
@@ -53,6 +55,7 @@ class SelectForm extends React.Component {
     render() {
         return (
             <form>
+                {/* fixes value to this.state.mycar */}
                 <select value={this.state.mycar}>
                     <option value="Ford">Ford</option>
                     <option value="Volvo">Volvo</option>
